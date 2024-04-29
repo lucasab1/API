@@ -1,16 +1,16 @@
 <?php
 // Definindo os parâmetros
 $data = array(
-    "param1" => "valor1",
-    "param2" => "valor2",
-    "param3" => "valor3"
+    "aprove" => "valor1",
+    "cot" => "valor2",
+    "user" => "valor3"
 );
 
 // Convertendo o array para JSON
 $data_string = json_encode($data);
 
 // URL da API para a qual você está enviando os dados
-$url = 'http://api.local/rest/endpoint';
+$url = 'http://sap-prd-01:8004/sap/bc/srt/wsdl/flv_10002P111AD1/sdef_url/ZAPROVARCOTACAO_ASYNC_IN?sap-client=600';
 
 // Inicializando a sessão cURL
 $ch = curl_init($url);
